@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.navbar {
+  background: linear-gradient(-45deg, #461934, #39385b, #1d211f, #952121);
+  background-size: 300% 300%;
+  animation: gradientFlow 8s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+}
+.form-control {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 6px 16px;
+  font-weight: 600;
+  border-radius: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:hover {
+  background: white;
+  color: black;
+}
+.btn-outline-success {
+  color: #e8f2f2;
+  border-color: #b1bbd5;
+  border: 2px solid white;
+}
+
+.btn-outline-success:hover {
+  background-color: #f0f5f5;
+  color: #000;
+}
+
+
+
+
+
+
+@keyframes slide {
+  0%    { transform: translateX(0); }
+  25%   { transform: translateX(0); }
+  30%   { transform: translateX(-100%); }
+  55%   { transform: translateX(-100%); }
+  60%   { transform: translateX(-200%); }
+  85%   { transform: translateX(-200%); }
+  90%   { transform: translateX(-300%); }
+  100%  { transform: translateX(-300%); }
+}
+
+
+
+
+
+
+
+
+
+body{
+  font-family: Anton
+Static;
+}
+
+/* Change slide height & size */
+.carousel-item img {
+  height: 400px;       /* Reduce height */
+  object-fit: cover;   /* Keep image proportional */
+}
+
+/* Move the whole carousel down */
+.carousel-inner {
+  margin-top: 500px;   
+  margin-left: 400px;
+  width: 800px;
+  height: fit-content;    
+     
+  /* Set width for the carousel */
+   /* Shift position vertically */
+}
+
+/* Change caption position */
+.carousel-caption {
+  bottom: 20px;        /* Move caption closer to bottom */
+}
+/* Move previous button */
+.carousel-control-prev {
+  left: 10px;     /* Horizontal position from left edge */
+  top: 30%;       /* Vertical position */
+}
+
+/* Move next button */
+.carousel-control-next {
+  right: 10px;    /* Horizontal position from right edge */
+  top: 30%;       /* Vertical position */
+}
+
